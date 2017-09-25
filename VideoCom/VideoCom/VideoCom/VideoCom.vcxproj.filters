@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ff8a898f-ee77-406b-982e-1838025f0fc8}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e180132c-c18f-4ce3-98a6-9e4745208796}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8aa6c21a-f2e8-4e99-b4cb-c16dbe130dc3}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest</Extensions>
+    </Filter>
+    <Filter Include="SoUI Resouece">
+      <UniqueIdentifier>{92a1f04b-5be9-4a2a-b57d-7a9a34852689}</UniqueIdentifier>
+      <Extensions>idx;xml;png;gif;jpg;ico;lua;bmp</Extensions>
+    </Filter>
+    <Filter Include="SOUI Header">
+      <UniqueIdentifier>{9ea69e4e-3313-4282-8abd-7ca7d002c3bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SOUI Source">
+      <UniqueIdentifier>{0854bd29-dec7-427d-8f99-ebba7cc3fb14}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="license.txt" />
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VideoCom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\controls.extend\image3d\3dlib.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\controls.extend\image3d\3dmatrix.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\controls.extend\image3d\3dtransform.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.ctrls\imre\ClipboardConverter.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.ctrls\imre\dataobject.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.ctrls\ExtendCtrls.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.skins\ExtendSkins.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.ctrls\imre\HTMLParser.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.ctrls\imre\HTTPDownloader.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.ctrls\imre\ImgProvider.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.ctrls\imre\RichEditObj.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.ctrls\imre\RichEditObjFactory.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.ctrls\imre\RichEditOleBase.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.ctrls\imre\RichEditOleCallback.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.ctrls\imre\RichEditOleCtrls.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.ctrls\imre\RichEditUnitConverter.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SAnimImg.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.skins\SAntialiasSkin.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.ctrls\SButtonEx.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\controls.extend\SChromeTabCtrl.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\controls.extend\SImageMaskWnd.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.ctrls\SImageView.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.ctrls\imre\SImRichedit.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\controls.extend\SListboxex.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="extend.ctrls\SplitBar.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="STabCtrl2.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\controls.extend\STurn3DView.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>SOUI Source</Filter>
+    </ClCompile>
+    <ClCompile Include="CurMeetInfoHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MeetDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="STreeCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EventSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EmpInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MeetNoticeDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VideoCom.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="STabCtrl2.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\imre\RichEditObjEvents.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\imre\RichEditObjFactory.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\imre\RichEditOleBase.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\imre\RichEditOleCallback.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\imre\RichEditOleCtrls.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\imre\RichEditUnitConverter.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SAnimImg.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.skins\SAntialiasSkin.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\SButtonEx.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\controls.extend\SChromeTabCtrl.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\controls.extend\SImageMaskWnd.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\SImageView.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\imre\SImRichEdit.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\controls.extend\SListboxex.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\SSplitBar.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\controls.extend\STurn3DView.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.skins\SVscrollbar.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\imre\RichEditObj.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\imre\IRichEditObjHost.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\controls.extend\image3d\3dlib.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\controls.extend\image3d\3dmatrix.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\controls.extend\image3d\3dTransform.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\imre\ClipboardConverter.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\imre\dataobject.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\ExtendCtrls.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.skins\ExtendSkins.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\controls.extend\FileHelper.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\imre\HTMLParser.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\imre\HTTPDownloader.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="extend.ctrls\imre\ImgProvider.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\controls.extend\image3d\PerspectiveTransform.h">
+      <Filter>SOUI Header</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CDefAdapter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CurMeetInfoHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MeetDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="STreeCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EmpInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MeetNoticeDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\soui_res.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="uires\uidef\init.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\values\color.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\values\skin.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\values\string.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_main.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="uires\image\soui.ico">
+      <Filter>SoUI Resouece</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="uires\uires.idx">
+      <Filter>SoUI Resouece</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

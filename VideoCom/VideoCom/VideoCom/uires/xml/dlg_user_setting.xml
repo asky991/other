@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<SOUI name="window" title="修改用户资料" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" width="368" height="616" margin="1,1,1,1" wndType="8" toolWindow="1" resizable="1" translucent="0">
+	<root cache="1">
+		<window pos="0,0,-0,-0" colorBkgnd="rgb(50,126,173)" colorText="#ffffff" name="dlg_userinfo" skin="skin.background">
+			<caption pos="0,0,-0,30" focusable="1" drawfocusrect="0" visible="1">
+				<text pos="5,4" name="txt_title">修改资料</text>
+				<imgbtn skin="_skin.sys.btn.close" pos="-45,0" tip="close" animate="1" name="btn_close" />
+				<imgbtn skin="_skin.sys.btn.maximize" pos="-83,0" animate="1" name="btn_max" />
+				<imgbtn skin="_skin.sys.btn.restore" pos="-83,0" show="0" animate="1" />
+				<imgbtn skin="_skin.sys.btn.minimize" pos="-121,0" animate="1" name="btn_min" />
+			</caption>
+			<img pos="112,64" size="120, 120" skin="img_head_default" />
+			<text pos="50,260" size="68, 32">姓名</text>
+			<text pos="50,316" size="68,32">电话</text>
+			<text pos="50,364" size="68, 32">邮箱</text>
+			<edit pos="140,260" size="120, 32" colorBkgnd="#FFFFFF" cueText="" colorText="#000000" name="edit_name" />
+			<edit pos="140,316" size="120, 32" colorBkgnd="#FFFFFF" cueText="" colorText="#000000" name="edit_tel" />
+			<edit pos="140,364" size="120, 32" colorBkgnd="#FFFFFF" cueText="" colorText="#000000" name="edit_email" />
+			<button pos="120,440" size="96,32" colorText="#000000" skin="_skin.sys.btn.normal" name="btn_ok">确定修改</button>
+			<button pos="120,496" size="96, 32" colorText="#000000" skin="_skin.sys.btn.normal" name="btn_cancel">取消</button>
+			<button pos="120,192" size="96, 32" colorText="#000000" skin="_skin.sys.btn.normal" name="btn_upload_head">上传头像</button>
+		</window>
+	</root>
+</SOUI>

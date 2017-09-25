@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<SOUI name="window" title="布局" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" width="320" height="512" margin="1,5,5,5" wndType="8" toolWindow="1" resizable="1">
+	<root cache="1">
+		<window pos="0,0,-0,-0" colorBkgnd="#5ea1f7ff" colorText="#ffffff">
+			<caption pos="0,0,-0,30" focusable="1" drawfocusrect="0" show="0">
+				<text pos="5,4" name="txt_title">标题</text>
+				<imgbtn skin="_skin.sys.btn.close" pos="-45,0" tip="close" animate="1" />
+				<imgbtn skin="_skin.sys.btn.maximize" pos="-83,0" animate="1" />
+				<imgbtn skin="_skin.sys.btn.restore" pos="-83,0" show="0" animate="1" />
+				<imgbtn skin="_skin.sys.btn.minimize" pos="-121,0" animate="1" />
+			</caption>
+			<text pos="48,32" size="80, 32" font="face:微软雅黑,size:16">会议名称</text>
+			<edit pos="48,80" size="232, 32" colorBkgnd="#FFFFFF" cueText="" colorText="#000000" name="edit_meet_name" />
+			<dateTimePicker pos="48,160" size="232, 32" name="dtp_meet_start" padding="4,0,4,0" dropWidth="300" timeEnable="1">
+				<calstyle ncSkin="_skin.sys.border" margin="1" />
+			</dateTimePicker>
+			<dateTimePicker pos="48,240" size="232, 32" name="dtp_meet_end" padding="4,0,4,0" dropWidth="300" timeEnable="1">
+				<calstyle ncSkin="_skin.sys.border" margin="1" />
+			</dateTimePicker>
+			<edit pos="48,160" size="232, 32" colorBkgnd="#FFFFFF" cueText="" colorText="#000000" name="edit_meet_start" visible="0" />
+			<edit pos="48,240" size="232, 32" colorBkgnd="#FFFFFF" cueText="" colorText="#000000" name="edit_meet_end" visible="0" />
+			<edit pos="48,328" size="224, 120" colorBkgnd="#FFFFFF" cueText="" colorText="#000000" autoVscroll="1" multiLines="10" name="edit_meet_content" />
+			<text pos="48,120" font="face:微软雅黑,size:16" size="80, 32">开始时间</text>
+			<text pos="48,200" size="80, 32" font="face:微软雅黑,size:16">结束时间</text>
+			<text pos="48,280" font="face:微软雅黑,size:16" size="120, 32">会议简介(30字）</text>
+			<button pos="48,464" size="72, 32" colorText="#000000" skin="_skin.sys.btn.normal" name="btn_cancel">返回</button>
+			<button pos="152,464" size="96,32" colorText="#000000" skin="_skin.sys.btn.normal" name="btn_ok">发送通知</button>
+		</window>
+	</root>
+</SOUI>

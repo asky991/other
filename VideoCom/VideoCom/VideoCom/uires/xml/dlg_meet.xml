@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<SOUI name="window" title="布局" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" width="592" height="452" margin="1,5,5,5" wndType="8" toolWindow="1" resizable="1">
+	<root cache="1">
+		<window pos="0,0,-0,-0" colorBkgnd="#5ea1f7ff" colorText="#ffffff">
+			<caption pos="0,0,-0,30" focusable="1" drawfocusrect="0">
+				<text pos="5,4" name="txt_title">会议信息</text>
+				<imgbtn skin="_skin.sys.btn.close" pos="-45,0" tip="close" animate="1" name="btn_close" />
+				<imgbtn skin="_skin.sys.btn.maximize" pos="-83,0" animate="1" name="btn_max" />
+				<imgbtn skin="_skin.sys.btn.restore" pos="-83,0" show="0" animate="1" />
+				<imgbtn skin="_skin.sys.btn.minimize" pos="-121,0" animate="1" name="btn_min" />
+			</caption>
+			<edit pos="184,112" size="272, 32" colorBkgnd="#FFFFFF" cueText="" colorText="#000000" name="edit_meet_name" />
+			<text pos="88,112" size="80,32">会议名称</text>
+			<text pos="88,160" size="80,32">开始时间</text>
+			<text pos="88,208" size="88, 32">预计结束时间</text>
+			<dateTimePicker pos="184,160" size="272, 32" name="dtp_meet_start_time" padding="4,0,4,0" dropWidth="300" timeEnable="1">
+				<calstyle ncSkin="_skin.sys.border" margin="1" />
+			</dateTimePicker>
+			<dateTimePicker pos="184,208" size="272, 32" name="dtp_meet_end_time" padding="4,0,4,0" dropWidth="300" timeEnable="1">
+				<calstyle ncSkin="_skin.sys.border" margin="1" />
+			</dateTimePicker>
+			<edit pos="248,56" size="272, 32" colorBkgnd="#FFFFFF" cueText="" colorText="#000000" name="edit_meet_start_time" visible="0" />
+			<edit pos="288,48" size="272, 32" colorBkgnd="#FFFFFF" cueText="" colorText="#000000" name="edit_meet_end_time" visible="0" />
+			<check pos="208,248" size="80, 32" skin="_skin.sys.checkbox" name="ck_video_meet">视频会议</check>
+			<check pos="296,248" size="80, 32" skin="_skin.sys.checkbox" name="ck_voice_meet">语音会议</check>
+			<check pos="376,248" size="80, 32" skin="_skin.sys.checkbox" name="ck_local_meet">本地会议</check>
+			<button pos="392,408" size="88, 32" colorText="#000000" skin="_skin.sys.btn.normal" name="btn_ok">发送邀请</button>
+			<button pos="488,408" size="72, 32" colorText="#000000" skin="_skin.sys.btn.normal" name="btn_cancel">取消</button>
+			<text pos="48,48" size="110, 32">填写会议室信息 |</text>
+			<text pos="160,48" size="40, 32">群视频</text>
+			<text pos="88,280" size="96,32" name="txt_staff">已选参会人员</text>
+			<tileview size="464, 88" wantTab="1" marginSize="5" pos="88,320" name="tv_group_inviter">
+				<template itemHeight="28" itemWidth="84" colorHover="#cccccc" colorSelected="#0000ff" trackMouseEvent="1" skin="">
+					<text pos="0,0,-24,24" offset="0,0" name="txt_staff_name" font="face:微软雅黑,size:14">李二</text>
+					<imgbtn pos="-24,4,@16,@16" tip="" animate="1" skin="images_gb_png" name="img_staff_del" />
+				</template>
+			</tileview>
+		</window>
+	</root>
+</SOUI>

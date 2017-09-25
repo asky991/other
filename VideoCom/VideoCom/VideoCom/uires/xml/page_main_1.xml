@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<include width="1260" height="620">
+	<window pos="0,0,%31,-0" name="main_left_dlg" colorBkgnd="#5ea1f7ff">
+		<img pos="32,40" size="120, 104" skin="img_head_default" name="img_head_view" />
+		<imgbtn pos="-40,0" size="32, 24" tip="" animate="1" skin="btn_login_setting" name="btn_userinfo_setting" />
+		<tabctrl2 name="tab_main_erp" font="face:微软雅黑,size:16" tabPos="0" tabOffset="0" tabAlign="top" colorText="#ffffff" pos="0,180,-0,-0" show="1" curSel="0" focusable="0" tabHeight="30" text-y="6" icon-x="0" tabInterSize="0" tabWidth="180" icon-y="0">
+			<page2 title="企业员工" tip="企业员工" colorText="#480048ff" show="1" display="1">
+				<treectrl pos="8,8,-10,-10" itemHeight="30" checkBox="1" font="underline:1" name="tc_erp_info" />
+			</page2>
+			<page2 title="会议" tip="会议">
+				<text pos="19,24" size="100, 30" font="face:微软雅黑,size:16">会议成员</text>
+				<text pos="200,24" size="100, 30" font="face:微软雅黑,size:16" visible="0">操作</text>
+				<listctrl pos="8,66,-10,-20" hotTrack="1" itemHeight="20" headerHeight="30" font="underline:1" name="list_mtstatus">
+					<header align="left" itemSwapEnable="1" sortHeader="1" colorText="#ffffff" font="face:微软雅黑,size:16" visible="1">
+						<items>
+							<item width="180" align="center">姓名</item>
+							<item width="180">状态</item>
+						</items>
+					</header>
+				</listctrl>
+				<imgbtn pos="200,16" size="48, 32" tip="操作" name="imgbtn_operate_menu" colorText="#0000ffff">操作</imgbtn>
+			</page2>
+		</tabctrl2>
+		<text pos="176,60" size="80, 32" font="face:微软雅黑,size:16" name="txt_username">刘志强</text>
+		<text pos="176,112" size="96,32" name="txt_user_dept">产品设计部</text>
+		<text pos="280,112" size="72,32" font="face:微软雅黑,size:16" name="txt_user_pos">主管</text>
+	</window>
+	<window pos="%30,0,-0,-0" skin="skin.menu_bkg" name="main_right_dlg">
+		<tabctrl2 name="tab_right_video" font="face:微软雅黑,size:16" tabPos="0" tabAlign="top" colorText="#000000ff" pos="0,0,-0,-150" show="1" curSel="0" focusable="0" tabHeight="30" text-y="6" icon-x="0" tabInterSize="0" tabWidth="100" icon-y="0" colorBkgnd="#5ea1f7ff">
+			<page2 title="视频" tip="视频" interval="50" colorText="#000000ff" ani_in="img_head_small" ani_out="ICON_LOGO">
+				<text pos="0,0,-0,-0" colorBkgnd="#000000ff" />
+				<button pos="688,0" size="96,32" colorText="#000000" name="btn_rec">录制</button>
+				<button pos="784,0" size="96,32" colorText="#000000" skin="_skin.sys.btn.normal" name="btn_eleb">电子白板</button>
+				<window pos="520,40" size="368, 360" colorBkgnd="#ffffe0ff" name="wnd_drawboard" visible="1" />
+				<img pos="664,8" size="25, 25" skin="images_syj_png" />
+			</page2>
+			<page2 title="会议列表" tip="会议列表" colorText="#000000ff">
+				<tileview wantTab="1" marginSize="5" pos="0,0,-0,-0" name="tv_meetlist" colorBkgnd="#FFFFFF">
+					<template itemHeight="80" itemWidth="434" colorHover="#ffffff" colorSelected="#0000ff" trackMouseEvent="1" skin="">
+						<img pos="15,20,@52,@47" offset="0,0" skin="images_hysgl_png" name="img_meet_icon" />
+						<text pos="90,10,-100,35" offset="0,0" name="txt_meettitle" font="face:微软雅黑,size:14">第三次常委扩大会议审议第三次常委扩大会议审议</text>
+						<button pos="-90,10,@75,@25" offset="0,0" name="btn_join" skin="_skin.sys.btn.normal">加入</button>
+						<text pos="90,45,@75,@25" offset="0,0" font="face:微软雅黑,size:14">召开时间</text>
+						<text pos="150,45,@60,@25" offset="0,0" name="txt_meetstarttime" font="face:微软雅黑,size:14">16:30</text>
+						<text pos="200,45,@90,@25" offset="0,0" font="face:微软雅黑,size:14">预计结束时间</text>
+						<text pos="290,45,@60,@25" offset="0,0" name="txt_meetendtime" font="face:微软雅黑,size:14">17:30</text>
+						<text pos="-90,45,@75,@25" offset="0,0" name="txt_meetstatus" font="face:微软雅黑,size:14">已结束</text>
+					</template>
+				</tileview>
+			</page2>
+			<page2 title="会议通知/录像" tip="会议通知/录像" colorText="#000000ff" colorBkgnd="#ffffffff">
+				<text pos="56,48" font="face:微软雅黑,bold:1,size:16" size="156, 32">会议通知 | NOTICE</text>
+				<link pos="|-90,48" size="80, 32" href="www.baidu.com" cursor="hand" colorText="#000000ff" colorTextHover="rgb(231,155,64)" font="face:微软雅黑,size:14" fontHover="underline:1,italic:1" name="lk_meet_notice_more">更多/more</link>
+				<link pos="-100,48" size="80, 32" href="www.baidu.com" cursor="hand" colorText="#000000ff" colorTextHover="rgb(231,155,64)" font="face:微软雅黑,size:14" fontHover="underline:1,italic:1" name="lk_meet_video_more">更多/more</link>
+				<text pos="|50,48" size="76,32" font="face:微软雅黑,bold:1,size:16">会议录像</text>
+				<tileview size="328, 328" wantTab="1" marginSize="5" pos="56,100,|-10,-0" name="tv_meet_notice">
+					<template itemHeight="30" itemWidth="400" colorHover="#cccccc" colorSelected="#0000ff" trackMouseEvent="1" skin="">
+						<text pos="0,0,|+20,30" offset="0,0" name="txt_meet_notice_title" font="face:微软雅黑,size:14">关于第三代产品设计之前的事项研讨</text>
+						<text pos="|+30,0,|+80,30" offset="0,0" font="face:微软雅黑,size:14">距开始</text>
+						<text pos="-120,0,-0,30" offset="0,0" name="txt_meet_rest_time" font="face:微软雅黑,size:14">1:30:20</text>
+					</template>
+				</tileview>
+				<tileview size="384, 304" wantTab="1" marginSize="5" pos="|50,100,-20,-0" name="tv_meet_video_file">
+					<template itemHeight="30" itemWidth="400" colorHover="#cccccc" colorSelected="#0000ff" trackMouseEvent="1" skin="">
+						<text pos="0,0,|+25,30" offset="0,0" name="txt_meet_video_name" font="face:微软雅黑,size:14">关于第三代产品设计之前的事项研讨</text>
+						<text pos="|+30,0,|+110,30" offset="0,0" name="txt_meet_video_date" font="face:微软雅黑,size:14">2017/7/16</text>
+						<button pos="|120,5,|140,25" offset="0,0" name="btn_video_play" skin="_skin.stn.img.play" />
+						<button pos="|150,5,|170,25" offset="0,0" name="btn_video_filedir_open" skin="_skin.stn.img.open" />
+					</template>
+				</tileview>
+			</page2>
+		</tabctrl2>
+		<button pos="210,-190" size="100,40" colorText="#000000" skin="_skin.sys.btn.normal" name="btn_MeetFileStatus">隐藏</button>
+		<tabctrl2 name="tab_main_file" font="face:微软雅黑,size:16" tabPos="0" tabAlign="top" colorText="#ffffff" pos="0,-180,-0,-0" show="1" curSel="1" focusable="0" tabHeight="30" text-y="6" icon-x="0" tabInterSize="0" tabWidth="100" icon-y="0">
+			<page2 title="呼叫列表" tip="呼叫列表" interval="50">
+				<mclistview headerHeight="30" pos="0,0,-0,-0" name="mclist_call" colorBkgnd="#5ea1f7ff">
+					<header align="center" itemSwapEnable="1" fixWidth="0" sortHeader="1" colorText="#000000ff">
+						<items>
+							<item width="150">姓名</item>
+							<item width="150">状态</item>
+							<item width="150">部门</item>
+						</items>
+					</header>
+					<template itemHeight="40" colorHover="#cccccc" colorSelected="#0000ff">
+						<window name="col1" clipClient="1">
+							<text name="txt_name" pos="5,|0" offset="0,-0.5" />
+						</window>
+						<window name="col2" clipClient="1">
+							<text name="txt_status" pos="|0,|0" offset="-0.5,-0.5" />
+						</window>
+						<window name="col3" clipClient="1">
+							<text name="txt_dept" pos="|0,|0" offset="-0.5,-0.5" />
+						</window>
+					</template>
+				</mclistview>
+			</page2>
+			<page2 title="当前会议文件" tip="当前会议文件">
+				<mclistview headerHeight="30" pos="0,0,-0,-0" name="mclist_file">
+					<header align="center" itemSwapEnable="1" fixWidth="0" sortHeader="1" colorText="#000000ff">
+						<items>
+							<item width="200">文件名</item>
+							<item width="100">上传人</item>
+							<item width="80">格式</item>
+							<item width="120">时间</item>
+							<item width="80">下载</item>
+							<item width="80">预览</item>
+						</items>
+					</header>
+					<template itemHeight="40" colorHover="#cccccc" colorSelected="#0000ff">
+						<window name="col1" clipClient="1">
+							<img name="img_wj_icon" skin="images_wj_png" pos="0,0,@34,@38" />
+							<text name="txt_filename" pos="35,|0" offset="0,-0.5" />
+						</window>
+						<window name="col2" clipClient="1">
+							<text name="txt_uploader" pos="|0,|0" offset="-0.5,-0.5" />
+						</window>
+						<window name="col3" clipClient="1">
+							<text name="txt_fileext" pos="|0,|0" offset="-0.5,-0.5" />
+						</window>
+						<window name="col4" clipClient="1">
+							<text name="txt_uploadtime" pos="|0,|0" offset="-0.5,-0.5" />
+						</window>
+						<window name="col5" clipClient="1">
+							<!--<text name="txt_download" pos="|0,|0" offset="-0.5,-0.5" /> -->
+							<img name="img_down_icon" skin="images_xz_png" pos="20,10,@24,@24" />
+						</window>
+						<window name="col6" clipClient="1">
+							<!--<text name="txt_preview" pos="|0,|0" offset="-0.5,-0.5" />-->
+							<img name="img_preview_icon" skin="images_yl_png" pos="20,10,@24,@24" />
+						</window>
+					</template>
+				</mclistview>
+			</page2>
+		</tabctrl2>
+	</window>
+</include>
